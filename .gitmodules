@@ -1,3 +1,6 @@
 [submodule "stopwords"]
 	path = stopwords
 	url = https://github.com/MarginC/stopwords.git
+[submodule "jd_comment_spider"]
+	path = jd_comment_spider
+	url = https://github.com/MarginC/jd_comment_spider.git
