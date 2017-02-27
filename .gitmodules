@@ -1,0 +1,3 @@
+[submodule "stopwords"]
+	path = stopwords
+	url = https://github.com/MarginC/stopwords.git
