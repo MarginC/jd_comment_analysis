@@ -15,7 +15,7 @@ jieba.load_userdict('./userdict.txt')
 
 def test2():
 	stopkey=[line.strip().decode('utf-8') for line in open('./stopwords/stop_words.txt').readlines()]
-	with open('./jd_comment_spider/1309864.csv') as f:
+	with open('./jd_comment_spider/1015650.csv') as f:
 		reader = csv.reader(f)
 		for row in islice(reader, 1, None):
 			comment = row[11]
@@ -23,7 +23,8 @@ def test2():
 			#print("|".join(list(set(seg_list)-set(stopkey))))
 			seg_list = jieba.analyse.extract_tags(comment)
 			#print('|'.join(seg_list[0]))
-			print("|".join(seg_list))
+			if len(seg_list) > 10:
+				print("|".join(seg_list).encode('utf-8').strip())
 
 if __name__ == '__main__':
 	test2()
