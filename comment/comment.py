@@ -1,175 +1,146 @@
 #!/usr/bin/python
 #coding=utf-8
 
-import sys
+import copy
+from rules import _loader as loader
 
-reload(sys)
-sys.setdefaultencoding("utf-8")
-
-DEFAULT_CHAR = '/'
+DEFAULT_CHAR = u'/'
 
 def xor(a, b):
 	return bool(a) != bool(b)
 
+FIELDS = [
+'userProvince','userLevelName','price','userClientShow','creationTime','orderProcessSpeed',
+'shipSpeed','deliverySpeed','isOnTimeDelivery','isDeliveryCorrect','isDeliveryIntact',
+'isDifficultLastMile','isDeliveryLastMile','deliveryServiceAttitude','installerArrivalTime',
+'installerArrivalSpeed','installSpeed','installResult','installerExplain','installerAttitude',
+'isInstallerArbitraryCharges','isBillComplete','isGiftPresentation','isAfterSale','isReturnVisit',
+'isGiftByAfterSale','isConnectCustomerService','connectCustomerServiceReason','customerServiceEffectiveness',
+'isMaintain','maintainTimes','maintainResult','isReplacement','replacementResult','replacementTimes',
+'isReturn','returnResult','retrunTimes','afterSaleEffectiveness','afterSaleAttitude','isDemandResolved',
+'referenceName','isPriceChange','priceChanged','priceCompare','priceDifference','functionalDiversity',
+'energyEfficiency','performance','noiseFigure','beautiful','complete','isBreakdown','failureIndex',
+'EaseOfUse','brandAwareness','productAwareness','sftOfCostEffective','sftOfInsured','sftOfOrderProcess',
+'sftOfDelivery','sftOfInstallation','sftOfAfterSale','sftOfProductQuality','sftOfProductConsistent',
+'sftOfPrepurchaseExpectation','score','sftLevel','compilation','willOfRepurchasecategory','willOfRepurchaseBand',
+'recommended','plusAvailable','isMobile','userLevelId','userClient','commentTime','referenceTime','days','content','keywords']
+
+DEFAILT_VALUE = {
+'userProvince': DEFAULT_CHAR, 'userLevelName': u'','price': 0,'userClientShow': u'来自网页购物','creationTime': u'',
+'orderProcessSpeed': 3,'shipSpeed': 3,'deliverySpeed': 3,'isOnTimeDelivery': True,'isDeliveryCorrect': True,'isDeliveryIntact': True,
+'isDifficultLastMile': False,'isDeliveryLastMile': True,'deliveryServiceAttitude': 3,'installerArrivalTime': u'配送员安装',
+'installerArrivalSpeed': 3,'installSpeed': 3,'installResult': 3,'installerExplain': 3,'installerAttitude': 3,'isInstallerArbitraryCharges': False,
+'isBillComplete': True,'isGiftPresentation': False,'isAfterSale': False,'isReturnVisit': False,'isGiftByAfterSale': False,'isConnectCustomerService': False,
+'connectCustomerServiceReason': DEFAULT_CHAR,'customerServiceEffectiveness': 3,'isMaintain': False,'maintainTimes': DEFAULT_CHAR,'maintainResult': DEFAULT_CHAR,
+'isReplacement': False,'replacementResult': DEFAULT_CHAR,'replacementTimes': DEFAULT_CHAR,'isReturn': False,'returnResult': DEFAULT_CHAR,
+'retrunTimes': DEFAULT_CHAR,'afterSaleEffectiveness': 3,'afterSaleAttitude': 3,'isDemandResolved': True,'referenceName': u'','isPriceChange': False,
+'priceChanged': DEFAULT_CHAR,'priceCompare': False,'priceDifference': DEFAULT_CHAR,'functionalDiversity': 3,'energyEfficiency': 3,'performance': 3,
+'noiseFigure': 3,'beautiful': 3,'complete': 3,'isBreakdown': False,'failureIndex': DEFAULT_CHAR,'EaseOfUse': 3,'brandAwareness': 3,'productAwareness': 3,
+
+#satisfactionOf
+'sftOfCostEffective': 3,'sftOfInsured': 3,'sftOfOrderProcess': 3,'sftOfDelivery': 3,'sftOfInstallation': 3,'sftOfAfterSale': 3,'sftOfProductQuality': 3,
+'sftOfProductConsistent': 3,'sftOfPrepurchaseExpectation': 3,'score': 0,'sftLevel': u'','compilation': 1,'willOfRepurchasecategory': 3,'willOfRepurchaseBand': 3,
+'recommended': 3,
+
+#extern
+'plusAvailable': 0,'isMobile': 0,'userLevelId': u'','userClient': 0,'commentTime': u'','referenceTime': u'','days': 0,'content': u'','keywords': u''
+}
+
+RULES = loader.load()
+
 class Comment(object):
 	def __init__(self):
-		self.userProvince = DEFAULT_CHAR
-		self.userLevelName = u''
-		self.price = 0
-		self.userClientShow = u'来自网页购物'
-		self.createTime = u''
-#		self.commentTime = ''
-#		self.days = 0
-		self.orderProcessSpeed = 3
-		self.shipSpeed = 3
-		self.deliverySpeed = 3
-		self.isOnTimeDelivery = True
-		self.isDeliveryCorrect = True
-		self.isDeliveryIntact = True
-		self.isDifficultLastMile = False
-		self.isDeliveryLastMile = True
-		self.deliveryServiceAttitude = 3
+		self.data = copy.deepcopy(DEFAILT_VALUE)
 
-		self.installerArrivalTime = u'配送员安装'
-		self.installerArrivalSpeed = 3
-		self.installSpeed = 3
-		self.installResult = 3
-		self.installerExplain = 3
-		self.installerAttitude = 3
-		self.isInstallerArbitraryCharges = False
-		self.isBillComplete = True
-		self.isGiftPresentation = False
-
-		self.isAfterSale = False
-		self.isReturnVisit = False
-		self.isGiftByAfterSale = False
-		self.isConnectCustomerService = False
-		self.connectCustomerServiceReason = DEFAULT_CHAR
-		self.customerServiceEffectiveness = 3
-		self.isMaintain = False
-		self.maintainTimes = DEFAULT_CHAR
-		self.maintainResult = DEFAULT_CHAR
-		self.isReplacement = False
-		self.replacementResult = DEFAULT_CHAR
-		self.replacementTimes = DEFAULT_CHAR
-		self.isReturn = False
-		self.returnResult = DEFAULT_CHAR
-		self.retrunTimes = DEFAULT_CHAR
-		self.afterSaleEffectiveness = 3
-		self.afterSaleAttitude = 3
-		self.isDemandResolved = True
-
-		self.equipmentModel = u''
-
-		self.isPriceChange = False
-		self.priceChanged = DEFAULT_CHAR
-		self.priceCompare = False
-		self.priceDifference = DEFAULT_CHAR
-
-		self.functionalDiversity = 3
-		self.energyEfficiency = 3
-		self.performance = 3
-		self.noiseFigure = 3
-		self.beautiful = 3
-		self.complete = 3
-		self.isBreakdown = False
-		self.failureIndex = DEFAULT_CHAR
-		self.EaseOfUse = 3
-
-		self.brandAwareness = 3
-		self.productAwareness = 3
-
-		#satisfactionOf
-		self.sftOfCostEffective = 3
-		self.sftOfInsured = 3
-		self.sftOfOrderProcess = 3
-		self.sftOfDelivery = 3
-		self.sftOfInstallation = 3
-		self.sftOfAfterSale = 3
-		self.sftOfProductQuality = 3
-		self.sftOfProductConsistent = 3
-		self.sftOfPrepurchaseExpectation = 3
-
-		self.score = u''
-		self.sftLevel = u''
-
-		self.compilation = 1
-		self.willOfRepurchasecategory = 3
-		self.willOfRepurchaseBand = 3
-		self.recommended = 3
-
-	def checkUserLevelName(self):
+	def __checkUserLevelName(self):
 		return True
 
-	def checkUserClientShow(self):
+	def __checkUserClientShow(self):
 		return True
 
-	def checkOrderDelivery(self):
+	def __checkOrderDelivery(self):
 		return True
 
-	def checkInstallation(self):
+	def __checkInstallation(self):
 		return True
 
-	def checkCustomerService(self):
-		if self.isConnectCustomerService and not self.isAfterSale:
+	def __checkCustomerService(self):
+		if self.data['isConnectCustomerService'] and not self.data['isAfterSale']:
 			return False
-		if not xor(self.isAfterSale, self.sftOfAfterSale == DEFAULT_CHAR):
+		if not xor(self.data['isAfterSale'], self.data['sftOfAfterSale'] == DEFAULT_CHAR):
 			return False
-		if not self.isAfterSale:
-			return self.afterSaleEffectiveness != DEFAULT_CHAR \
-				and self.afterSaleAttitude != DEFAULT_CHAR \
-				and self.isDemandResolved != DEFAULT_CHAR
+		if not self.data['isAfterSale']:
+			return self.data['afterSaleEffectiveness'] != DEFAULT_CHAR \
+				and self.data['afterSaleAttitude'] != DEFAULT_CHAR \
+				and self.data['isDemandResolved'] != DEFAULT_CHAR
 		else:
-			return self.afterSaleEffectiveness == DEFAULT_CHAR \
-                and self.afterSaleAttitude == DEFAULT_CHAR \
-                and self.isDemandResolved == DEFAULT_CHAR
+			return self.data['afterSaleEffectiveness'] == DEFAULT_CHAR \
+				and self.data['afterSaleAttitude'] == DEFAULT_CHAR \
+				and self.data['isDemandResolved'] == DEFAULT_CHAR
 
-	def checkPrice(self):
-		return xor(self.isPriceChange, self.priceChanged == DEFAULT_CHAR) \
-			and xor(self.priceCompare, self.priceDifference == DEFAULT_CHAR)
+	def __checkPrice(self):
+		return xor(self.data['isPriceChange'], self.data['priceChanged'] == DEFAULT_CHAR) \
+			and xor(self.data['priceCompare'], self.data['priceDifference'] == DEFAULT_CHAR)
 
-	def checkBreakdown(self):
-		return xor(self.isBreakdown, self.failureIndex == DEFAULT_CHAR)
+	def __checkBreakdown(self):
+		return xor(self.data['isBreakdown'], self.data['failureIndex'] == DEFAULT_CHAR)
 
 	def check(self):
-		return self.checkUserLevelName() and self.checkUserClientShow() \
-			and self.checkOrderDelivery() and self.checkInstallation() \
-			and self.checkCustomerService() and self.checkPrice() \
-			and self.checkBreakdown()
+		return self.__checkUserLevelName() and self.__checkUserClientShow() \
+			and self.__checkOrderDelivery() and self.__checkInstallation() \
+			and self.__checkCustomerService() and self.__checkPrice() \
+			and self.__checkBreakdown()
+
+	def getSftLevel(self, score):
+		if score > 3:
+			return '好评'
+		elif score > 1:
+			return '中评'
+		else:
+			return '差评'
+
+	def fill(self, comment):
+		if comment['userProvince'] != '':
+			self.data['userProvince'] = comment['userProvince']
+		if comment['userClientShow'] != '':
+			self.data['userClientShow'] = comment['userClientShow']
+		self.data['userLevelName'] = comment['userLevelName']
+		self.data['creationTime'] = comment['creationTime']
+		self.data['plusAvailable'] = comment['plusAvailable']
+		self.data['referenceName'] = comment['referenceName']
+		self.data['referenceTime'] = comment['referenceTime']
+		self.data['userLevelId'] = comment['userLevelId']
+		self.data['userClient'] = comment['userClient']
+		self.data['score'] = comment['score']
+		self.data['sftLevel'] = self.getSftLevel(int(comment['score']))
+		self.data['isMobile'] = comment['isMobile']
+		self.data['days'] = comment['days']
+		self.data['content'] = '"{0}"'.format(comment['content'])
+		self.data['keywords'] = '"{0}"'.format(comment['keywords'])
+
+	def matchRule(self, field, rules, keywords):
+		for rule in rules:
+			if set(rule[1:]).issubset(keywords):
+				self.data[field] = rule[0]
+
+	def matchRules(self, keywords):
+		for field in FIELDS:
+			if field in RULES.keys():
+				self.matchRule(field, RULES[field], set(keywords))
 
 	def __str__(self):
-		return u'"{0}","{1}","{2}","{3}","{4}","{5}","{6}","{7}","{8}","{9}",' \
-			'"{10}","{11}","{12}","{13}","{14}","{15}","{16}","{17}","{18}","{19}",' \
-			'"{20}","{21}","{22}","{23}","{24}","{25}","{26}","{27}","{28}","{29}",' \
-			'"{30}","{31}","{32}","{33}","{34}","{35}","{36}","{37}","{38}","{39}",' \
-			'"{40}","{41}","{42}","{43}","{44}","{45}","{46}","{47}","{48}","{49}",' \
-			'"{50}","{51}","{52}","{53}","{54}","{55}","{56}","{57}","{58}","{59}",' \
-			'"{60}","{61}","{62}","{63}","{64}","{65}","{66}","{67}","{68}","{69}",' \
-			'"{70}"'.format( \
-			self.userProvince, self.userLevelName, self.price, self.userClientShow, \
-			self.createTime, self.orderProcessSpeed, self.shipSpeed, self.deliverySpeed, \
-			self.isOnTimeDelivery, self.isDeliveryCorrect, self.isDeliveryIntact, \
-				self.isDifficultLastMile, self.isDeliveryLastMile, self.deliveryServiceAttitude, \
-			self.installerArrivalTime, self.installerArrivalSpeed, self.installSpeed, \
-				self.installResult, self.installerExplain, self.installerAttitude, \
-			self.isInstallerArbitraryCharges, self.isBillComplete, self.isGiftPresentation, \
-				self.isAfterSale, self.isReturnVisit, self.isGiftByAfterSale, \
-			self.isConnectCustomerService, self.connectCustomerServiceReason, self.customerServiceEffectiveness, \
-			self.isMaintain, self.maintainTimes, self.maintainResult, \
-			self.isReplacement, self.replacementResult, self.replacementTimes, \
-			self.isReturn, self.returnResult, self.retrunTimes, \
-			self.afterSaleEffectiveness, self.afterSaleAttitude, self.isDemandResolved, \
-			self.equipmentModel, \
-			self.priceChanged, self.priceCompare, self.priceDifference, \
-			self.functionalDiversity, self.energyEfficiency, self.performance, self.noiseFigure, \
-				self.beautiful, self.complete, self.isBreakdown, self.failureIndex, self.EaseOfUse, \
-			self.brandAwareness, self.productAwareness, \
-			self.sftOfCostEffective, self.sftOfInsured, self.sftOfOrderProcess, self.sftOfDelivery, \
-				self.sftOfInstallation, self.sftOfAfterSale, \
-			self.sftOfProductQuality, self.sftOfProductConsistent, self.sftOfPrepurchaseExpectation, \
-			self.score, self.sftLevel, self.compilation, \
-			self.willOfRepurchasecategory, self.willOfRepurchaseBand, self.recommended)
+		data = []
+		for i in range(len(FIELDS)):
+			data.append(self.data[FIELDS[i]])
+		return ','.join(''.join(str(elems)) for elems in data)
 
+for field in FIELDS:
+	if not field in DEFAILT_VALUE:
+		raise Exception
+
+for key in RULES.keys():
+	if not field in DEFAILT_VALUE:
+		raise Exception
 
 if __name__ == '__main__':
 	comment = Comment()
