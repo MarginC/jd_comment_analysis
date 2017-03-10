@@ -22,6 +22,10 @@ def analysis(comment):
 
 
 if __name__ == '__main__':
+	max = 0xffffffff
+	if len(sys.argv) == 2:
+		max = int(sys.argv[1])
+	count = 0
 	with open('./jd_comment_spider/1773994', encoding='gbk', errors='ignore') as f:
 		print(','.join(comment.FIELDS))
 		for line in f.readlines():
@@ -34,3 +38,6 @@ if __name__ == '__main__':
 				c.matchRules(seg_list)
 				print(c)
 
+				count += 1
+				if count == max:
+					break
