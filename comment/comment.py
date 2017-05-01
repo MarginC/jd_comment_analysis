@@ -1,8 +1,19 @@
 #!/usr/bin/python
 #coding=utf-8
 
+import codecs
+try:
+	import sys
+	reload(sys)
+	sys.setdefaultencoding('utf8')
+except:
+	pass
 import copy
-from rules import _loader as loader
+if __name__ != '__main__':
+	from rules import _loader as loader
+	RULES = loader.load()
+else:
+	RULES = {}
 
 DEFAULT_CHAR = u'/'
 
@@ -25,8 +36,51 @@ FIELDS = [
 'sftOfPrepurchaseExpectation','score','sftLevel','compilation','willOfRepurchasecategory','willOfRepurchaseBand',
 'recommended','plusAvailable','isMobile','userLevelId','userClient','commentTime','referenceTime','days','content','keywords']
 
+OUT_HEADERS = [
+	'id','Order_from','Comment_time','Order_processing_speed','Sending_out_speed',
+	'Delivery_speed','If_delivered_on_original/promised_date','If_delivered_right_product',
+	'If intact in transit','If the last Km is difficult','If the last Km is served',
+	'Distribution staff service attitude','Installer arrival time','Installer arrival speed',
+	'Installation speed','Installation effect','Explaining service','Installer service attitude',
+	'If installer has any charges','If the bill is complete',
+	'If any gifts','If any after-sales processes','If any revisiting',
+	'If any gifts from after-sales','If contacted customer service',
+	'Reason contacting customer service','Customer service processing efficiency',
+	'If fixing','Number of fixing','Fixing result','If replacement','Replacement result',
+	'If return','Return result','After-sales processing efficiency','After-sales attitude',
+	'If problems solved','Product model','If price changed in a short time','Changing price',
+	'Compared to different channel prices','Price gap','Product functional diversity',
+	'Energy saving index','Performance index','Noise situation','Aesthetics performance',
+	'Intactness performance','If product is faulty','Fault index','Ease of use',
+	'Cost-effective satisfaction','Reputation and price satisfaction','Order processing satisfaction',
+	'Logistics distribution satisfaction','Installation satisfaction','After-sales service satisfaction',
+	'Product quality satisfaction','User_region','User_level','User_purchase_amount',
+	'Consistent with the description satisfaction','Compared with pre-purchase expectations satisfaction',
+	'Customer satisfaction','Customer satisfaction level','Customer complaints index',
+	'Brand awareness to Haier','Awareness to product',
+	'Will of repurchase the same brand and the same kind of product',
+	'Will of repurchase the same brand','Recommended to buy index']
+
+OUT_ORDERS = [
+	None, 'userClientShow', 'creationTime', 'orderProcessSpeed', 'shipSpeed',
+	'deliverySpeed', 'isOnTimeDelivery', 'isDeliveryCorrect', 'isDeliveryIntact', 'isDifficultLastMile',
+	'isDeliveryLastMile', 'deliveryServiceAttitude', 'installerArrivalTime',
+	'installerArrivalSpeed','installSpeed','installResult','installerExplain',
+	'installerAttitude', 'isInstallerArbitraryCharges', 'isBillComplete',
+	'isGiftPresentation','isAfterSale','isReturnVisit','isGiftByAfterSale',
+	'isConnectCustomerService','connectCustomerServiceReason','customerServiceEffectiveness',
+	'isMaintain','maintainTimes','maintainResult','isReplacement','replacementResult',
+	'isReturn','returnResult','afterSaleEffectiveness','afterSaleAttitude',
+	'isDemandResolved','referenceName','isPriceChange','priceChanged','priceCompare',
+	'priceDifference','functionalDiversity','energyEfficiency','performance','noiseFigure',
+	'beautiful','complete','isBreakdown','failureIndex','EaseOfUse','sftOfCostEffective',
+	'sftOfInsured','sftOfOrderProcess','sftOfDelivery','sftOfInstallation','sftOfAfterSale',
+	'sftOfProductQuality','userProvince','userLevelName','price','sftOfProductConsistent',
+	'sftOfPrepurchaseExpectation','score','sftLevel','compilation','brandAwareness',
+	'productAwareness','willOfRepurchasecategory','willOfRepurchaseBand','recommended']
+
 DEFAILT_VALUE = {
-'userProvince': DEFAULT_CHAR, 'userLevelName': u'','price': 0,'userClientShow': u'来自网页购物','creationTime': u'',
+'userProvince': DEFAULT_CHAR, 'userLevelName': DEFAULT_CHAR,'price': 0,'userClientShow': u'来自网页购物','creationTime': u'',
 'orderProcessSpeed': 3,'shipSpeed': 3,'deliverySpeed': 3,'isOnTimeDelivery': True,'isDeliveryCorrect': True,'isDeliveryIntact': True,
 'isDifficultLastMile': False,'isDeliveryLastMile': True,'deliveryServiceAttitude': 3,'installerArrivalTime': u'配送员安装',
 'installerArrivalSpeed': 3,'installSpeed': 3,'installResult': 3,'installerExplain': 3,'installerAttitude': 3,'isInstallerArbitraryCharges': False,
@@ -39,14 +93,13 @@ DEFAILT_VALUE = {
 
 #satisfactionOf
 'sftOfCostEffective': 3,'sftOfInsured': 3,'sftOfOrderProcess': 3,'sftOfDelivery': 3,'sftOfInstallation': 3,'sftOfAfterSale': 3,'sftOfProductQuality': 3,
-'sftOfProductConsistent': 3,'sftOfPrepurchaseExpectation': 3,'score': 0,'sftLevel': u'','compilation': 1,'willOfRepurchasecategory': 3,'willOfRepurchaseBand': 3,
+'sftOfProductConsistent': 3,'sftOfPrepurchaseExpectation': 3,'score': 0,'sftLevel': u'','compilation': 0,'willOfRepurchasecategory': 3,'willOfRepurchaseBand': 3,
 'recommended': 3,
 
 #extern
 'plusAvailable': 0,'isMobile': 0,'userLevelId': u'','userClient': 0,'commentTime': u'','referenceTime': u'','days': 0,'content': u'','keywords': u''
 }
 
-RULES = loader.load()
 
 class Comment(object):
 	def __init__(self):
@@ -130,8 +183,11 @@ class Comment(object):
 
 	def __str__(self):
 		data = []
-		for i in range(len(FIELDS)):
-			data.append(self.data[FIELDS[i]])
+		for field in OUT_ORDERS:
+			if field != None:
+				data.append(self.data[field])
+			else:
+				data.append('None')
 		return ','.join(''.join(str(elems)) for elems in data)
 
 for field in FIELDS:
@@ -144,5 +200,9 @@ for key in RULES.keys():
 
 if __name__ == '__main__':
 	comment = Comment()
-	print(comment)
+	with codecs.open('test.csv', 'w', 'gb2312') as f:
+		f.write((','.join(OUT_HEADERS) + '\n').decode('utf-8'))
+		print(','.join(OUT_HEADERS))
+		f.write((str(comment) + '\n').decode('utf-8'))
+		print(str(comment))
 
