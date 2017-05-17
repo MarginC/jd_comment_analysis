@@ -11,7 +11,7 @@ except:
 import copy
 if __name__ != '__main__':
 	from rules import _loader as loader
-	RULES = loader.load()
+	RULES = loader.load_rules()
 else:
 	RULES = {}
 

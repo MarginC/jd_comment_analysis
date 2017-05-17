@@ -1,6 +1,8 @@
 #coding=utf-8
 
 import os
+import json
+import codecs
 
 def __getFieldName(filename):
 	idx = filename.find('.')
@@ -14,15 +16,15 @@ def __getFieldName(filename):
 
 def __loadRules(filename):
 	rules = []
-	with open(filename, encoding='utf-8', errors='ignore') as f:
+	with codecs.open(filename, encoding='utf-8', errors='ignore') as f:
 		for line in f.readlines():
 			strs = line.split(' ')
 			if len(strs) > 1:
 				rules.append(strs)
 	return rules
 
-def load():
-	fieldList = {}
+def load_rules():
+	rules = {}
 	dir = os.path.split(os.path.realpath(__file__))[0]
 	for filename in os.listdir(dir):
 		#need skip '.svn'
@@ -31,8 +33,8 @@ def load():
 		#1.field.rules
 		ret, name = __getFieldName(filename)
 		if ret:
-			fieldList[name] = __loadRules(dir + '\\' + filename)
-	return fieldList
+			rules[name] = __loadRules(dir + '\\' + filename)
+	return rules
 
 if __name__ == '__main__':
-	print(load())
+	print(json.dumps(load_rules(), indent=2, ensure_ascii=False))
