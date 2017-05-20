@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #coding=utf-8
 
 import os
@@ -67,6 +68,18 @@ def load_regexes():
 	return rules
 
 if __name__ == '__main__':
-	print(json.dumps(load_rules(), indent=2, ensure_ascii=False))
-	regexes = load_regexes()
-	pprint(regexes)
+	rules = load_rules()
+	json.dumps(rules, indent=2, ensure_ascii=False)
+	comment = u'发货神速，送货速度快，并且马上安装，已使用几次，感觉还不错，给满分。客服服务态度尤其好。'
+	fields = load_regexes()
+	for field in fields:
+		regexes = fields[field]
+		for regex in regexes:
+			patterns = regex['patterns']
+			unmatched = False
+			for pattern in patterns:
+				if not re.search(pattern, comment):
+					unmatched = True
+					break
+			if not unmatched:
+				print('{0}: {1} {2}'.format(field, regex['score'], patterns))

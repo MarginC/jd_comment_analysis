@@ -2,18 +2,21 @@
 #coding=utf-8
 
 import codecs
+import copy
+import re
 try:
 	import sys
 	reload(sys)
 	sys.setdefaultencoding('utf8')
 except:
 	pass
-import copy
+
+RULES = {}
+REGEXES = {}
 if __name__ != '__main__':
 	from rules import _loader as loader
 	RULES = loader.load_rules()
-else:
-	RULES = {}
+	REGEXES = loader.load_regexes()
 
 DEFAULT_CHAR = u'/'
 
@@ -181,6 +184,10 @@ class Comment(object):
 			if field in RULES.keys():
 				self.matchRule(field, RULES[field], set(keywords))
 
+	def match(self, comment, callback, args):
+		eval(callback)(self, comment, args)
+		pass
+
 	def __str__(self):
 		data = []
 		for field in OUT_ORDERS:
@@ -190,19 +197,49 @@ class Comment(object):
 				data.append('None')
 		return ','.join(''.join(str(elems)) for elems in data)
 
+
+def matchKeywords(comment, keywords):
+	for field in FIELDS:
+		if field in RULES:
+			for rule in RULES[field]:
+				if set(rule[1:]).issubset(keywords):
+					comment.data[field] = rule[0]
+					break
+
+
+def matchRegex(comment, str):
+	for field in FIELDS:
+		if field in REGEXES:
+			regexes = REGEXES[field]
+			for regex in regexes:
+				patterns = regex['patterns']
+				unmatched = False
+				for pattern in patterns:
+					if not re.search(pattern, str):
+						unmatched = True
+						break
+				if not unmatched:
+					comment.data[field] = regex['score']
+					continue
+
+
 for field in FIELDS:
 	if not field in DEFAILT_VALUE:
 		raise Exception
 
 for key in RULES.keys():
-	if not field in DEFAILT_VALUE:
+	if not key in DEFAILT_VALUE:
+		raise Exception
+
+for key in REGEXES.keys():
+	if not key in DEFAILT_VALUE:
 		raise Exception
 
 if __name__ == '__main__':
 	comment = Comment()
-	with codecs.open('test.csv', 'w', 'gb2312') as f:
-		f.write((','.join(OUT_HEADERS) + '\n').decode('utf-8'))
+	with codecs.open('test.csv', 'w', 'utf-8') as f:
+		f.write((','.join(OUT_HEADERS) + '\n'))
 		print(','.join(OUT_HEADERS))
-		f.write((str(comment) + '\n').decode('utf-8'))
+		f.write((str(comment) + '\n'))
 		print(str(comment))
 

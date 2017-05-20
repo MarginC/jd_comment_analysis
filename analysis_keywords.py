@@ -14,7 +14,7 @@ jieba.analyse.set_stop_words('./stopwords/stop_words.txt')
 jieba.load_userdict('./userdict.txt')
 
 def test2():
-	stopkey=[line.strip().decode('utf-8') for line in open('./stopwords/stop_words.txt').readlines()]
+	stopkey=[line.strip().encode('utf-8') for line in open('./stopwords/stop_words.txt').readlines()]
 	with open('./jd_comment_spider/1015650.csv') as f:
 		reader = csv.reader(f)
 		for row in islice(reader, 1, None):
