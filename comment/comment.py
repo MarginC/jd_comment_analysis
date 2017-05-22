@@ -105,8 +105,10 @@ DEFAILT_VALUE = {
 
 
 class Comment(object):
-	def __init__(self):
+	def __init__(self, _json=None):
 		self.data = copy.deepcopy(DEFAILT_VALUE)
+		if _json:
+			self.fill(_json)
 
 	def __checkUserLevelName(self):
 		return True
@@ -172,7 +174,10 @@ class Comment(object):
 		self.data['isMobile'] = comment['isMobile']
 		self.data['days'] = comment['days']
 		self.data['content'] = '"{0}"'.format(comment['content'])
-		self.data['keywords'] = '"{0}"'.format(comment['keywords'])
+		try:
+			self.data['keywords'] = '"{0}"'.format(comment['keywords'])
+		except:
+			pass
 
 	def matchRule(self, field, rules, keywords):
 		for rule in rules:
@@ -184,9 +189,8 @@ class Comment(object):
 			if field in RULES.keys():
 				self.matchRule(field, RULES[field], set(keywords))
 
-	def match(self, comment, callback, args):
-		eval(callback)(self, comment, args)
-		pass
+	def match(self, comment, callback, args=None):
+		return callback(self, comment, args)
 
 	def __str__(self):
 		data = []
@@ -198,7 +202,7 @@ class Comment(object):
 		return ','.join(''.join(str(elems)) for elems in data)
 
 
-def matchKeywords(comment, keywords):
+def matchKeywords(comment, keywords, args=None):
 	for field in FIELDS:
 		if field in RULES:
 			for rule in RULES[field]:
@@ -207,7 +211,8 @@ def matchKeywords(comment, keywords):
 					break
 
 
-def matchRegex(comment, str):
+def matchRegex(comment, str, args=None):
+	count = 0
 	for field in FIELDS:
 		if field in REGEXES:
 			regexes = REGEXES[field]
@@ -220,7 +225,9 @@ def matchRegex(comment, str):
 						break
 				if not unmatched:
 					comment.data[field] = regex['score']
+					count += 1
 					continue
+	return count
 
 
 for field in FIELDS:
