@@ -28,7 +28,7 @@ def __loadRules(filename):
 
 def __loadRegexes(filename):
 	rules = []
-	with codecs.open(filename, encoding='utf-8', errors='ignore') as f:
+	with codecs.open(filename, encoding='utf-8', errors='strict') as f:
 		for line in f.readlines():
 			strs = line.split(' ')
 			if len(strs) > 1:
