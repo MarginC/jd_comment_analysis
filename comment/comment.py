@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#coding=utf-8
+# coding=utf-8
 
 import codecs
 import copy
@@ -110,6 +110,11 @@ class Comment(object):
 		if _json:
 			self.fill(_json)
 
+	def clean_and_fill(self, _json):
+		for field in DEFAILT_VALUE:
+			self.data[field] = DEFAILT_VALUE[field]
+		self.fill(_json)
+
 	def __checkUserLevelName(self):
 		return True
 
@@ -212,7 +217,7 @@ def matchKeywords(comment, keywords, args=None):
 
 
 def matchRegex(comment, str, args=None):
-	count = 0
+	fields = []
 	for field in FIELDS:
 		if field in REGEXES:
 			regexes = REGEXES[field]
@@ -220,14 +225,14 @@ def matchRegex(comment, str, args=None):
 				patterns = regex['patterns']
 				unmatched = False
 				for pattern in patterns:
-					if not re.search(pattern, str):
+					if not pattern.search(str):
 						unmatched = True
 						break
 				if not unmatched:
+					fields.append('{0}: {1}'.format(field, patterns))
 					comment.data[field] = regex['score']
-					count += 1
-					continue
-	return count
+					break
+	return fields
 
 
 for field in FIELDS:
