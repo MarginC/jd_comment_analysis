@@ -17,13 +17,15 @@ def init_parser():
 	parser.add_option('-i', '--input', action='store', dest='input',
 		help='set the input filename', metavar='FILE')
 	parser.add_option('-o', '--output', action='store', dest='output',
-		help='set the output filename', metavar='FILE')
+		default='./output/result.csv', help='set the output filename', metavar='FILE')
 	parser.add_option('-u', '--unmatch', action='store', dest='unmatch',
-		help='set the unmatch filename', metavar='FILE')
+		default='./output/unmatch.txt', help='set the unmatch filename', metavar='FILE')
 	parser.add_option('-c', '--count', action='store', dest='max_count',
 		default=sys.maxsize, help='set the max count to process')
 	parser.add_option('-l', '--log', action='store', dest='logfile',
-		help='set the log file')
+		default='./output/failed.json', help='set the log file')
+	parser.add_option('-s', '--statistics', action='store', dest='statistics',
+		default='./output/statistic', help='set the statistics file')
 	return parser.parse_args()
 
 
@@ -31,11 +33,12 @@ def main():
 	(options, args) = init_parser()
 	statistic = {}
 	count = 0
-	start_time = time.process_time()
-	input = codecs.open(options.input, 'r', encoding='utf-8', errors='strict')
+	input = codecs.open(options.input, 'r', errors='strict')
 	output = codecs.open(options.output, 'w', encoding='utf-8')
 	unmatch = codecs.open(options.unmatch, 'w', encoding='utf-8')
 	log = codecs.open(options.logfile, 'w', encoding='utf-8')
+	statistics = codecs.open(options.statistics, 'w', encoding='utf-8')
+
 	output.write((','.join(comment.OUT_HEADERS) + '\n'))
 
 	c = comment.Comment()
@@ -64,8 +67,10 @@ def main():
 	summary = 0
 	for key in statistic:
 		summary += statistic[key]
-	print('statistic {0}, summary {1}, process {2}s'.
-		format(json.dumps(statistic, indent=2), summary, time.process_time()))
+	strs = 'statistic {0}, summary {1}, process {2}s'.format(
+		json.dumps(statistic, indent=2), summary, time.process_time())
+	statistics.write(strs)
+	print(strs)
 
 
 if __name__ == '__main__':
