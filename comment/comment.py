@@ -229,7 +229,7 @@ def matchRegex(comment, str, args=None):
 						unmatched = True
 						break
 				if not unmatched:
-					fields.append('{0}: {1}'.format(field, patterns))
+					fields.append(field)
 					comment.data[field] = regex['score']
 					break
 	return fields

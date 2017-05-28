@@ -31,7 +31,10 @@ def init_parser():
 
 def main():
 	(options, args) = init_parser()
+	summary = {}
 	statistic = {}
+	for field in comment.FIELDS:
+		statistic[field] = 0
 	count = 0
 	input = codecs.open(options.input, 'r', errors='strict')
 	output = codecs.open(options.output, 'w', encoding='utf-8')
@@ -59,16 +62,19 @@ def main():
 		else:
 			unmatch.write(_json['content'] + '\n')
 		try:
-			statistic[_match_count] += 1
+			summary[_match_count] += 1
 		except:
-			statistic[_match_count] = 1
+			summary[_match_count] = 1
+		for field in fields:
+			statistic[field] += 1
+		count += 1
 		if count == int(options.max_count):
 			break
-	summary = 0
+	sum = 0
 	for key in statistic:
-		summary += statistic[key]
-	strs = 'statistic {0}, summary {1}, process {2}s'.format(
-		json.dumps(statistic, indent=2), summary, time.process_time())
+		sum += statistic[key]
+	strs = 'statistic: {0}, \r\nsummary: {1}, \r\ncomment count {2}, process {3}s'.format(
+		json.dumps(statistic, indent=2), json.dumps(summary, indent=2), sum, time.process_time())
 	statistics.write(strs)
 	print(strs)
 
