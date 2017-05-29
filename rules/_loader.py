@@ -68,7 +68,10 @@ def load_regexes():
 		# 1.field.rules
 		ret, name = __get_field_name(filename)
 		if ret:
-			regexes[name] = __load_regexes(directory + '\\' + filename)
+			try:
+				regexes[name] = __load_regexes(directory + '\\' + filename)
+			except Exception as e:
+				print(e, filename)
 	return regexes
 
 

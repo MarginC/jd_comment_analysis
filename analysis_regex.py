@@ -16,6 +16,8 @@ def init_parser():
 	parser = OptionParser()
 	parser.add_option('-i', '--input', action='store', dest='input',
 		help='set the input filename', metavar='FILE')
+	parser.add_option('-e', '--encoding', action='store', dest='encoding',
+		default='utf-8', help='set the encoding of input filename', metavar='FILE')
 	parser.add_option('-o', '--output', action='store', dest='output',
 		default='./output/result.csv', help='set the output filename', metavar='FILE')
 	parser.add_option('-u', '--unmatch', action='store', dest='unmatch',
@@ -36,7 +38,8 @@ def main():
 	for field in comment.FIELDS:
 		statistic[field] = 0
 	count = 0
-	input = codecs.open(options.input, 'r', errors='strict')
+
+	input = codecs.open(options.input, 'r', encoding=options.encoding, errors='strict')
 	output = codecs.open(options.output, 'w', encoding='utf-8')
 	unmatch = codecs.open(options.unmatch, 'w', encoding='utf-8')
 	log = codecs.open(options.logfile, 'w', encoding='utf-8')
@@ -74,7 +77,8 @@ def main():
 	for key in statistic:
 		sum += statistic[key]
 	strs = 'statistic: {0}, \r\nsummary: {1}, \r\ncomment count {2}, process {3}s'.format(
-		json.dumps(statistic, indent=2), json.dumps(summary, indent=2), sum, time.process_time())
+		json.dumps(statistic, indent=2, sort_keys=True), json.dumps(summary, indent=2, sort_keys=True),
+		sum, time.process_time())
 	statistics.write(strs)
 	print(strs)
 
