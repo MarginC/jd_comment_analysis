@@ -76,9 +76,9 @@ def main():
 	sum = 0
 	for key in statistic:
 		sum += statistic[key]
-	strs = 'statistic: {0}, \r\nsummary: {1}, \r\ncomment count {2}, process {3}s'.format(
+	strs = 'statistic: {0}, \r\nsummary: {1}, \r\ncomment count {2}, field match count {3}, process {4}s'.format(
 		json.dumps(statistic, indent=2, sort_keys=True), json.dumps(summary, indent=2, sort_keys=True),
-		sum, time.process_time())
+		count, sum, time.process_time())
 	statistics.write(strs)
 	print(strs)
 

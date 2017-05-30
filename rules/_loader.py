@@ -31,15 +31,21 @@ def __load_rules(filename):
 def __load_regexes(filename):
 	regexes = []
 	with codecs.open(filename, encoding='utf-8', errors='strict') as f:
+		line_number = 0
 		for line in f.readlines():
+			line_number += 1
 			strs = line.split(' ')
 			if len(strs) > 1:
 				rule = dict()
 				rule['score'] = strs[0]
 				rule['patterns'] = []
 				for str in strs[1:]:
-					p = re.compile(str.rstrip())
-					rule['patterns'].append(p)
+					try:
+						p = re.compile(str.rstrip())
+						rule['patterns'].append(p)
+					except Exception as e:
+						print('Exception: {0}, Filename: {1}, Line: {2}'.format(e, filename, line_number))
+						exit()
 				regexes.append(rule)
 	return regexes
 
@@ -68,10 +74,7 @@ def load_regexes():
 		# 1.field.rules
 		ret, name = __get_field_name(filename)
 		if ret:
-			try:
-				regexes[name] = __load_regexes(directory + '\\' + filename)
-			except Exception as e:
-				print(e, filename)
+			regexes[name] = __load_regexes(directory + '\\' + filename)
 	return regexes
 
 

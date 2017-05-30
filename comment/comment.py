@@ -3,7 +3,7 @@
 
 import codecs
 import copy
-import re
+
 try:
 	import sys
 	reload(sys)
