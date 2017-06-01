@@ -1,3 +1,10 @@
-1 划伤
-2 痕迹
-2 翻新
+True (没|没有|无)(划伤|划破|划痕|痕迹)
+False 划(伤|破|痕)
+False 痕迹
+False 翻新
+False 塑料(儿)?味
+False (像|是)用过
+False 不是原装
+False 水珠
+False 磕.{0,8}坑
+False 外壁.{0,4}薄
