@@ -67,8 +67,9 @@ def main():
 		if _match_count >= 15:
 			emotion_file.write(_json['content'] + '\n')
 			emotion_ret = emotion.nlpirEmotionPost(_json['content'])
-			emotion_file.write(json.dumps(emotion_ret, indent=2))
-			emotion_file.write('\n')
+			if emotion_ret:
+				emotion_file.write(json.dumps(emotion_ret, indent=2))
+				emotion_file.write('\n')
 
 		if _match_count > 0:
 			output_file.write(str(c) + '\n')
