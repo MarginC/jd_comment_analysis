@@ -1,275 +1,259 @@
 大品牌值得信赖，服务态度很好，买之前一直也是纠结买什么牌子的洗衣机，看其他品牌的评价，别的品牌买完后还要联系安装，小家电我就得麻烦，选购了海尔还真没失望，13号买的15号就送到家了，而且还给安装，还教我们怎么使用及注意事项，洗衣机声音很小，我和老公都很喜欢?
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"1\",\"fear\":\"0\",\"good\":\"4\",\"happy\":\"0\",\"sorrow\":\"1\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-8.00\",\"polarity\":\"8.00\",\"positivepoint\":\"16.00\"}}"
-}
-大品牌值得信赖，服务态度很好，买之前一直也是纠结买什么牌子的洗衣机，看其他品牌的评价，别的品牌买完后还要联系安装，小家电我就得麻烦，选购了海尔还真没失望，13号买的15号就送到家了，而且还给安装，还教我们怎么使用及注意事项，洗衣机声音很小，我和老公都很喜欢?
-{
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
-  "person": "",
-  "emotionjson": "{\"anger\":\"0\",\"evil\":\"1\",\"fear\":\"0\",\"good\":\"4\",\"happy\":\"0\",\"sorrow\":\"1\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-8.00\",\"polarity\":\"8.00\",\"positivepoint\":\"16.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-8.00\",\"polarity\":\"8.00\",\"positivepoint\":\"16.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 海尔的服务一向不错，送货速度超快，小哥也很贴心，发现我家龙头关不了建议换个龙头，不过他们的龙头70多块比较贵不建议我买，还是自己换划算。海尔的产品质量不是最好，但好在价廉物美，甩干时抖动好厉害，也可能是第一次用滚筒，不知道抖的这么厉害。声音也比较大，还好我家厨房离客厅远。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"3\",\"fear\":\"2\",\"good\":\"4\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-8.00\",\"polarity\":\"10.00\",\"positivepoint\":\"18.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-8.00\",\"polarity\":\"10.00\",\"positivepoint\":\"18.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 打了两次电话给我，两次没来安装！  我买了很久了！*！
   送货上门确实不错，只能说海尔售后服务很差。责任心太差！  估计退货都不受理！
 现在都还安装！
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"2\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-4.00\",\"polarity\":\"3.00\",\"positivepoint\":\"7.00\"}}"
-}
-打了两次电话给我，两次没来安装！  我买了很久了！*！
-  送货上门确实不错，只能说海尔售后服务很差。责任心太差！  估计退货都不受理！
-现在都还安装！
-{
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
-  "person": "",
-  "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"2\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-4.00\",\"polarity\":\"3.00\",\"positivepoint\":\"7.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-4.00\",\"polarity\":\"3.00\",\"positivepoint\":\"7.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 实在太差劲了，买了两台。其中一台给亲戚家买的，结果第五天降价200元，还不接受价格保护。送货后才知道没领补贴，也不提醒。结果打客服说下单超过72小时不让领，一下损失好多。打客服告诉我申请退货，从新下单，结果到目前也没处理好唉，十天了，这速度真服了。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"2\",\"fear\":\"0\",\"good\":\"3\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-6.00\",\"polarity\":\"4.00\",\"positivepoint\":\"10.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-6.00\",\"polarity\":\"4.00\",\"positivepoint\":\"10.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 质量不错，国产品牌，值得信赖，售后服务也很好，物流超快，两天就到货安装好了，赞一个。有这样服务态度和效率，相信国产品牌一定会战胜国外品牌，中国的制造业一定会重新在国内市场中夺回应有的份额!加油！
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"7\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"polarity\":\"14.00\",\"positivepoint\":\"14.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"polarity\":\"14.00\",\"positivepoint\":\"14.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 给爸妈买的，送货上门，服务很好，安装也很快，装好就用了，洗衣服很干净，全自动很方便，爸妈洗衣服就不累了，双十一活动很划算，又买一台给姨妈买的，今天应该就收到货了，我家阿里用的就是海尔的，非常好用，相信海尔，信赖京东，双十一买买买，根本停不下来
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"-2.00\",\"object\":\"\u963f\u91cc\",\"polarity\":\"11.00\",\"positivepoint\":\"13.00\"}}",
   "person": "\u963f\u91cc",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"4\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-2.00\",\"polarity\":\"11.00\",\"positivepoint\":\"13.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-2.00\",\"polarity\":\"11.00\",\"positivepoint\":\"13.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"-2.00\",\"object\":\"\u963f\u91cc\",\"polarity\":\"11.00\",\"positivepoint\":\"13.00\"}}"
 }
 洗衣机还行，就是配送快递公司日日顺服务太差了，前一天就到快递就问什么时间能送，说第二天从中午或下午送到，也不给个时间点。第二天外地过去等，从白天等到天黑。一直问客服什么时候送到，说四点半会送到，可能还会提前，最后等到五点半才送到！第一次遇到这样奇葩的快递公司，客服满嘴敷衍，快递员送错小区！一个字形容，差！！！！
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"1\",\"fear\":\"0\",\"good\":\"0\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"-1.00\",\"positivepoint\":\"4.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"-1.00\",\"positivepoint\":\"4.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 洗衣机物流送货很快安装师傅态度很好，机子操作非常简单，还能连手机远程洗衣真方便！！！客服人员态度也很好，买得挺实惠的，必须好评！支持京东，支持海尔啊。。。。。。。。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"6\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"21.00\",\"positivepoint\":\"22.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"21.00\",\"positivepoint\":\"22.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 洗衣机物流送货很快安装师傅态度很好，机子操作非常简单，还能连手机远程洗衣真方便！！！客服人员态度也很好，买得挺实惠的，必须好评！支持京东，支持海尔啊。。。。。。。。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"6\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"21.00\",\"positivepoint\":\"22.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"21.00\",\"positivepoint\":\"22.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 洗衣机物流送货很快安装师傅态度很好，机子操作非常简单，！客服人员态度也很好，买得挺实惠的，必须好评！支持京东，支持海尔啊。。。。。。。。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"6\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"19.00\",\"positivepoint\":\"20.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"19.00\",\"positivepoint\":\"20.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 洗衣机物流送货很快安装师傅态度很好，机子操作非常简单，客服人员态度也很好，用得挺实惠的，好评吧！支持京东，支持海尔啊。。。。。。。。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"5\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"15.00\",\"positivepoint\":\"16.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"15.00\",\"positivepoint\":\"16.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 帮姐姐买的，第二天就到了，大热天的两小伙子抬到三楼装好，弄的满头大汗，矿泉水都不要喝一口，都免费，实在太赞，价格比实体店便宜700，机子用起来很好，还保修三年，这么好的服务，这么实惠的价格，这么好的牌子，实在想不出为什么还有人给差评，良心说话，十个赞都不够，想想自己五年前买的西门子，价格五六千两年就坏了，满眼的泪啊，支持国货，从我做起
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"1\",\"fear\":\"0\",\"good\":\"4\",\"happy\":\"1\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-8.00\",\"polarity\":\"17.00\",\"positivepoint\":\"25.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-8.00\",\"polarity\":\"17.00\",\"positivepoint\":\"25.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 网购5,6年了，从没给过如此的差评，购买第二天就发现过滤气门没装好，本应该提出换货的，考虑到送货师傅抗上抗下不容易啊，就打电话给售后服务希望上门维修一下，可没想到过了4,5天都没人来修，这期间我还催过一次。以后再也不买海尔的东西了
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"2\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"-1.00\",\"positivepoint\":\"4.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"-1.00\",\"positivepoint\":\"4.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 配送: 购买后物流信息显示自营商品由第三方配送，且第二天有人员莫名的打电话过来！感觉就像是骗子来电，这种感觉很不好！
 送货安装：送货当天下雨，机器外包装已湿！开箱告知安装人员地平不平，他们还是表示调至脱水档没问题就好！但使用三次后，机器最后三分钟的声音就响的很！（防噪音地垫就没看到和安装过）
 保修服务差！第二天致电海尔客服，第三天当地维修处来电，我告知晚上或周末有空，维修处即告知会先完成服务单号，然后会安排师傅根据我的需求上门调试，次日，师傅白天来电要上门调试（维修处答应我的跟没说一样），后自己与师傅沟通，师傅答应晚上来看一下，晚上调试后，师傅也觉得机器脱水声音大，打回公司！公司开始扯皮表示机器没问题的，声音响是正常的，并说这个师傅资历浅，会换个资深的师傅再来看（既然经验不足，那你为什么不直接安排资深人员来看呢）！而第二天有新的师傅又是白天要上门，我告知只有晚上和周末有空，师傅答应会在晚上或周末来看一下，但从此就再没人上门调试过！没办法，我也懒得再和这种客服站沟通，最后自己调试地脚，虽比原来好，但声音依然响，现在就将就着用！
 总之: 吸取教训，不贪小，不再买海尔产品！
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"1\",\"evil\":\"7\",\"fear\":\"0\",\"good\":\"11\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"1\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-34.00\",\"polarity\":\"-15.00\",\"positivepoint\":\"19.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-34.00\",\"polarity\":\"-15.00\",\"positivepoint\":\"19.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 非常不错，送货快安装快，安装师傅很敬业而且很耐心，一个人一口气背到四楼，连口水也不喝，我还没有安装自来水龙头，师傅还耐心的指点如何改装管道。第二天我改造了管道就使用了，洗衣机外环大气，洗衣很静音，洗得很干净，海尔大品牌值得信赖。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"9\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-4.00\",\"polarity\":\"13.00\",\"positivepoint\":\"17.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-4.00\",\"polarity\":\"13.00\",\"positivepoint\":\"17.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 京东发货速度快，昨天到了今天安装师傅给安装好了，服务态度好，还给我讲解洗衣机得使用方法和注意事项，因看到差评心里挺没底的，安装师傅对我得疑问也解答了，如，1声音响，看看后面得螺丝钉是否卸掉了（必须卸掉），底部要放平2.如洗衣有沫沫，必须按照洗衣液后面得说明用量来放，不要多放3.洗一半要调换模式，需要先按暂停再按电源（长按看关闭了就松手）再开启电源选择你要切换得模式，并且洗了一下午得冬天羽绒服和大外套洗的很干净，声音大小可以接受不大，以上是我觉得能帮助后面犹豫购买得亲们，再说说京东官方客服，真的不错，因刚买还未收到就降价了，联系后很快得给解决问题，说申请保价后24小时可以退到余额上，真的收到了，第一次写这么字，我不是托，只是购买得感受！
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"3\",\"fear\":\"0\",\"good\":\"8\",\"happy\":\"1\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-17.00\",\"polarity\":\"10.00\",\"positivepoint\":\"27.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-17.00\",\"polarity\":\"10.00\",\"positivepoint\":\"27.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 三一五买的，价格很实惠，比实体店便宜好几百，送货快。家住农村，就没有申请安装，自己安装的，噪音小，很省水。衣服一点也不缠绕，家里人都很满意。以后还会推荐其他朋友购买。送货师傅态度也很好，点个赞。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"1\",\"fear\":\"0\",\"good\":\"6\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-4.00\",\"polarity\":\"14.00\",\"positivepoint\":\"18.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-4.00\",\"polarity\":\"14.00\",\"positivepoint\":\"18.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 一直关注着这款洗衣机，价格从*一直降到*，315这两天做活动又降到了*，用了节能补贴，到手才*多点，对于海尔的八公斤洗衣机来说已经是很值得了，海尔毕竟是大品牌，国内售后又好，自然而然的选择，购买后第二天预约师傅上门安装，还支持晚间送货，这一点很赞，师傅安装很用心，讲解清晰，很热心，买回来第二天就用了次，体验果然好，比全自动的要安静很多，而且洗的更干净些
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"10\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"polarity\":\"22.00\",\"positivepoint\":\"22.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"polarity\":\"22.00\",\"positivepoint\":\"22.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 用了之后来评价的，买之前看了很多，最终选择了这款，支持国产，相信海尔的品牌，洗衣机外观漂亮，洗衣服也干净，就是甩干时声音有点大，不过问题不是很大，这个价钱的洗衣机，已经不错了。送货师傅很给力，第二天就到了，搬到家很用心的安装好后才走的，再就是有一点提醒大家，如果送货师傅不安装，自己安装的话，一定要把洗衣机后面的几个螺丝卸下来，它是固定滚筒用的，不然一启动缸就被打坏了。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"2\",\"fear\":\"0\",\"good\":\"10\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-7.00\",\"polarity\":\"19.50\",\"positivepoint\":\"26.50\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-7.00\",\"polarity\":\"19.50\",\"positivepoint\":\"26.50\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 洗衣机外观挺漂亮的，功能也很强大，使用效果很好，整体性价比挺高的。物流很迅速，服务态度也很好，安装过程很积极，讲解了洗衣机使用的注意事项。京东客服针对服务过程中出现的问题解决很积极，并及时回访问题解决的结果满意度。一直比较信赖京东，赞一个！
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"8\",\"happy\":\"2\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-2.00\",\"polarity\":\"27.50\",\"positivepoint\":\"29.50\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-2.00\",\"polarity\":\"27.50\",\"positivepoint\":\"29.50\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 第N次在京东购物了，每一次都很满意，这次选的海尔洗衣机更是满意，服务很到位，送货师傅五六十了，还亲自给我背上三楼，还给我安装和各种使用介绍。货是晚上7点多送到的，可见其用心良苦，对待工作的高度敬业精神，本人甚是感动。机器特别漂亮，跟介绍无出入，送货特别快，下单第二天就联系送货时间。机器声音很小、运转速度也很快，功能齐全，物有所值，值得购买。还带自清洁功能，很好，可以把洗衣机脏东西冲出来，水温可调，这样带加热功能，价格来说，可以算得上物美价廉了。里面的滚筒的金属材质很好，不会生锈的！而且外面的控制面板很不错！显示清晰！旋转按钮的阻尼不错！手感也很好！＋洗衣液洗衣服的盒子也很大！洗衣机的滚筒门很严实！玻璃材质的！而且非常厚！亲测！用手一摸就感觉非常结实！防水胶皮也很厚！保证加热不变形！也不漏水！面板的功能选项也非常多！而且这洗衣机非常能洗！一次能洗很多很多衣服！很干净！洗一次1个半小时左右就不用管了！冲洗很多次！干净！好评！建议大家入手！
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"16\",\"happy\":\"1\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-10.00\",\"polarity\":\"50.50\",\"positivepoint\":\"60.50\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-10.00\",\"polarity\":\"50.50\",\"positivepoint\":\"60.50\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 海尔品质值得信赖，服务好、送货快，第一天下午下单第二天上午就送货到家里给安装好使用上了，洗衣机大容量、功能全，省电省水、洗衣效果好，全自动、操作方便，动力足、声音小，外观漂亮、时尚大方，即适合年轻人使用又适合老年人使用。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"5\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"16.50\",\"positivepoint\":\"17.50\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"16.50\",\"positivepoint\":\"17.50\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 变频电机很给力，安静平稳，8公斤肚子大，洗起来很给力。价格大概比实体店便宜七八百。从下单到送货上门都没超过48小时，快到送货师傅打电话我都误以为是骗子了。海尔师傅上门安装服务很好，是一次愉快的购物。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"1\",\"fear\":\"0\",\"good\":\"4\",\"happy\":\"2\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"6.00\",\"positivepoint\":\"11.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"6.00\",\"positivepoint\":\"11.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 已经不是第一次在京东买家电了，这次25号下单，28号就送到，过程中还有客服不断致电确认要求，安装师傅一口气搬上4楼然后直接安装。使用了感觉很安静。一直使用海尔品牌的洗衣机，性价比高，衣服干净。而且有简自洁功能。我们幸亏碰上促销，货比三家以后最后决定在京东买。果然无选择错。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"1\",\"fear\":\"0\",\"good\":\"3\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"0.00\",\"positivepoint\":\"5.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"0.00\",\"positivepoint\":\"5.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 之前用了15年的海尔波轮全自动洗衣机电磁阀终于坏了，只好换新的。我家一直使用海尔电器，电视、冰箱、空调、洗衣机都是海尔。不仅因为质量好，售后及维修服务都非常好，让人用得放心、舒心。所以，毫不犹豫地买了海尔HaierEG8012B29WE 。送货快，安装师傅技术好，素质高，安装好马上就用上了。此款洗衣机容量大，噪声也比较小，冬天用30度水温洗涤的衣物很干净。外观也不错，很值得推荐。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"6\",\"happy\":\"2\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-3.00\",\"polarity\":\"17.00\",\"positivepoint\":\"20.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-3.00\",\"polarity\":\"17.00\",\"positivepoint\":\"20.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 物流挺给力，送货时间准时，不用废话。安装工人也非常准时，细心，介绍使用。客服狠到位，事情说得都狠准确，外观漂亮，占地不大，省空间，声音可以接受，甩干时候稍有晃动，咨询后是正常的，所以总体非常好，值得拥有这个产品，非常不错
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"1\",\"fear\":\"0\",\"good\":\"7\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-6.00\",\"polarity\":\"10.50\",\"positivepoint\":\"16.50\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-6.00\",\"polarity\":\"10.50\",\"positivepoint\":\"16.50\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 洗衣机收到了，还不错，双12买的，很便宜，洗衣机动力很足，噪音小，送货上门的师傅态度也很好，还给免费安装了，还不错，一直很信赖海尔，还会来光顾的
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"1\",\"fear\":\"0\",\"good\":\"5\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-2.00\",\"polarity\":\"14.00\",\"positivepoint\":\"16.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-2.00\",\"polarity\":\"14.00\",\"positivepoint\":\"16.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 全家的电器都选的海尔，从京东买，活动价格很给力，外观大方，送货及时，安装也快，另外客服回复比较及时，已经使用过，洗的很干净，适合我这种懒人，过段时间再来追评
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"4\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-2.00\",\"polarity\":\"7.00\",\"positivepoint\":\"9.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-2.00\",\"polarity\":\"7.00\",\"positivepoint\":\"9.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 洗衣机收到了，很划算，师傅上门安装服务很好，装好就试洗了，不错声音不大，方便多了，操作很简单，教婆婆一遍就会了，外观和很喜欢，物流给力，很满意，要买还是买海尔值得信赖的品牌，推荐购买
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"7\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-3.00\",\"polarity\":\"11.00\",\"positivepoint\":\"14.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-3.00\",\"polarity\":\"11.00\",\"positivepoint\":\"14.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 双十一时买的，本来是买别的品牌，但是海尔这款价格比平时便宜了很多，并且质量有保证的很，或许由于是双十一，送货速度没有平时快，送到后预约海尔安装，第二天就上门安装了，安装师傅态度很好，安装后试了下，很好！
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"1\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"4.00\",\"positivepoint\":\"5.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-1.00\",\"polarity\":\"4.00\",\"positivepoint\":\"5.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 京东服务一如既往的好！客服服务态度非常好，昨天下单今天就收到了，试了一下非常好，比我在实体店看的又便宜又好！海尔的品质还是让我选择了海尔，新海尔果然不负众望，声音小，洗的东西多，个性化的洗衣程序适合我多种洗涤要求。送货和安装人员很负责，服务很到位。这是一次愉快的网购。  
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"3\",\"happy\":\"1\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-7.00\",\"polarity\":\"4.00\",\"positivepoint\":\"11.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-7.00\",\"polarity\":\"4.00\",\"positivepoint\":\"11.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 海尔品牌一直信赖钟爱，正在使用的冰箱热水器都是海尔的，都非常不错的！这款洗衣机整体外观大气时尚漂亮，材质质量仔细检查过没有发现任何不满意的地方，物流给力，隔天就到了。京东就是京东！家里装修买了很多电器，对这个最是喜欢满意，客服非常热情周到，有问必答。正规售后保障放心，功能强大，操作简单易懂，老人使用没有问题。容量大，足够一大家子使用省水省电，一直信赖京东，希望越做越好越做越大!能给老百姓更多实惠,支持！！
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"18\",\"happy\":\"1\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"56.50\",\"positivepoint\":\"61.50\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"56.50\",\"positivepoint\":\"61.50\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 失望 特别失望 我的机子噪音很大 我联系客服找人来给我看看  客服电话也打了  网上也说了  就是没人来给我检测  商品明确写7天无理由退换 但客服告诉我 没有质量问题就不能退换  这不就是骗人吗？多说在京东上买东西好  我是彻底失望了  海尔的东西以后也不会再买  我家上一个洗衣机就是海尔波轮的  还是双动力的  09年买的就***  了 刚刚过了保修期就坏了  修了一下*** 保修一年  过了一年又坏了  无语了  客服的服务也是醉了 说让我手机保持畅通  但等你几天就是没人给我打电话  就是为了拖到7天 让我没办法退货吗？每次问客服就是让我留下联系方式让我说洗衣机的问题  我都说了三次了  难道你们客服都没有记录吗？这个服务让人无语  以后京东的东西 还是谨慎购买 售后太差
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"2\",\"fear\":\"0\",\"good\":\"1\",\"happy\":\"1\",\"sorrow\":\"5\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-43.00\",\"polarity\":\"-28.00\",\"positivepoint\":\"15.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-43.00\",\"polarity\":\"-28.00\",\"positivepoint\":\"15.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 先说下发货速度，头天下午四点多下单，第二天中午就到了，而且日日顺客服一直打电话联系，非常负责。送货师傅给送到五楼，累得气喘吁吁，连杯水也没喝，很感动。海尔的售后人员给安装后，认真详细地介绍了使用方法，很敬业。最后再说洗衣机，这款是我选了好久才定下来的，果然没让我失望，外观漂亮大气，操作简单，声音小，洗得干净，最重要的是比实体店便宜。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"0\",\"fear\":\"0\",\"good\":\"7\",\"happy\":\"0\",\"sorrow\":\"1\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"14.50\",\"positivepoint\":\"19.50\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"14.50\",\"positivepoint\":\"19.50\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 因为搬了新家，之前一直用海尔的品牌，这款选的颜色是白色的，很不耐脏，这是我最后悔的地方，相比之前的海尔洗衣机使用起来，功能不方便，五年前选的是大概4000多块钱的洗衣机，这次怪自己没考虑清楚，买了这款便宜的，如果再多出1000多块钱感觉就会好很多吧。只能将就着用了！不过声音倒是蛮小的，安装师傅的态度很好，那么重的一台洗机机一个人背的！
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"2\",\"fear\":\"0\",\"good\":\"1\",\"happy\":\"1\",\"sorrow\":\"1\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"5.00\",\"positivepoint\":\"10.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"5.00\",\"positivepoint\":\"10.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 特意赶在做活动买的，感觉价格还比较划算吧。希望双11不会跌得太厉害噢！送货服务很快，前一天下午才买的，第二天中午就送到并安装好了。送货安装的师傅态度也不错，产品包装还行，就是打开洗衣机里面有水，不知道怎么会这样，师傅说出厂要试水，可我之前买过大牌子的都没这情况，问了客服也没回复了。洗衣机噪音什么的还好吧，洗衣时间有点长
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"2\",\"fear\":\"1\",\"good\":\"4\",\"happy\":\"0\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"7.00\",\"positivepoint\":\"12.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-5.00\",\"polarity\":\"7.00\",\"positivepoint\":\"12.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 准备搬新家，家电全京东！！乡村地方，京东不送（希望京东早日覆盖配送），自己从县城运回来，算上运费价格依然比当地店便宜甚多！而且海尔这样的品牌，乡村售后覆盖依然给力！
 乡下地方的人对网购还不够了解，加之本地实体店恶意摸黑网购，所以当地人对网购有抵触情绪，家里老人也一度质疑，后来看到我选的东西一样样到货，装上了，他们才放心许多！
@@ -279,10 +263,10 @@
 这个*的价位加上好评反200话费券，价格真是没得说！
 坐等反券啦。
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"5\",\"fear\":\"0\",\"good\":\"13\",\"happy\":\"2\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-21.00\",\"polarity\":\"18.00\",\"positivepoint\":\"39.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-21.00\",\"polarity\":\"18.00\",\"positivepoint\":\"39.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }
 很满意 中国心 海尔情
 1.海尔在国内也是数一数二的大品牌，之前在浙江买过海尔统帅的抽烟机，安装人员服务态度很好，所以就觉得海尔挺不错。后来陆续还买了电热水器。在四川家里前不久也添置了海尔的天然气灶和海尔的烟机，以及燃气热水器，总共才二五OO的价格，相当实惠，由于身处四川县级城市，安装师傅说你买的太便宜了，在县城光一个我这样的热水器就要二五零零，当时心里开心死了呵呵 爱京东 让我们销售到网购的便宜和正品的保证0
@@ -295,8 +279,8 @@
 优生活，上京东！
 （附照片，海尔的煤气灶 烟机 热水器呵呵 其实我厨房东西都是来自京东）
 {
-  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}",
   "person": "",
   "emotionjson": "{\"anger\":\"0\",\"evil\":\"2\",\"fear\":\"0\",\"good\":\"19\",\"happy\":\"4\",\"sorrow\":\"0\",\"surprise\":\"0\"}",
-  "stnResult": "{\"json0\":{\"negativepoint\":\"-12.00\",\"polarity\":\"58.00\",\"positivepoint\":\"70.00\"}}"
+  "stnResult": "{\"json0\":{\"negativepoint\":\"-12.00\",\"polarity\":\"58.00\",\"positivepoint\":\"70.00\"}}",
+  "pStnResult": "{\"json0\":{\"negativepoint\":\"0.00\",\"object\":\"\",\"polarity\":\"0.00\",\"positivepoint\":\"0.00\"}}"
 }

@@ -36,6 +36,7 @@ def init_parser():
 
 def main():
 	(options, args) = init_parser()
+	deduplication = {}
 	summary = {}
 	statistic = {}
 	for field in comment.FIELDS:
@@ -55,6 +56,10 @@ def main():
 	for line in input_file.readlines():
 		try:
 			_json = json.loads(line)
+			id = _json['id']
+			if id in deduplication:
+				continue
+			deduplication[id] = True
 			if len(_json['content']) < 10:
 				continue
 			c.clean_and_fill(_json)
