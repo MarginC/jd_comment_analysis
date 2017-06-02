@@ -9,6 +9,7 @@ import time
 import sys
 from optparse import OptionParser
 from utils import emotion3 as emotion
+from utils import price
 
 from comment import comment
 
@@ -43,6 +44,8 @@ def main():
 		statistic[field] = 0
 	count = 0
 
+	prices = price.load_price(price.PRICE_FILE)
+
 	input_file = codecs.open(options.input, 'r', encoding=options.encoding, errors='strict')
 	output_file = codecs.open(options.output, 'w', encoding='utf-8')
 	unmatch_file = codecs.open(options.unmatch, 'w', encoding='utf-8')
@@ -73,12 +76,13 @@ def main():
 			try:
 				emotion_ret = emotion.nlpirEmotionPost(_json['content'])
 				emotion_file.write(_json['content'] + '\n')
-				emotion_file.write(json.dumps(emotion_ret, indent=2))
+				emotion_file.write(json.dumps(emotion_ret, indent=2, sort_keys=True))
 				emotion_file.write('\n')
 			except:
 				pass
 
 		if _match_count > 0:
+			c.data['price'] = prices[_json['referenceId']]
 			output_file.write(str(c) + '\n')
 		else:
 			unmatch_file.write(_json['content'] + '\n')
