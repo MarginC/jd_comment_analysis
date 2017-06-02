@@ -22,11 +22,8 @@ nlpir_headers = {
 
 
 def nlpirEmotionPost(comment):
-	try:
-		r = requests.post(nlpir_url, data={'content': comment}, timeout=1)
-		return json.loads(r.text, encoding='gbk')
-	except:
-		return None
+	r = requests.post(nlpir_url, data={'content': comment}, timeout=1)
+	return json.loads(r.text, encoding='gbk')
 
 
 if __name__ == "__main__":

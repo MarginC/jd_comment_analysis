@@ -70,11 +70,13 @@ def main():
 		_match_count = len(fields)
 
 		if _match_count >= 15:
-			emotion_file.write(_json['content'] + '\n')
-			emotion_ret = emotion.nlpirEmotionPost(_json['content'])
-			if emotion_ret:
+			try:
+				emotion_ret = emotion.nlpirEmotionPost(_json['content'])
+				emotion_file.write(_json['content'] + '\n')
 				emotion_file.write(json.dumps(emotion_ret, indent=2))
 				emotion_file.write('\n')
+			except:
+				pass
 
 		if _match_count > 0:
 			output_file.write(str(c) + '\n')
