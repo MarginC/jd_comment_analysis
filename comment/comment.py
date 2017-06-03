@@ -96,7 +96,7 @@ DEFAILT_VALUE = {
 
 #satisfactionOf
 'sftOfCostEffective': 3,'sftOfInsured': 3,'sftOfOrderProcess': 3,'sftOfDelivery': 3,'sftOfInstallation': 3,'sftOfAfterSale': 3,'sftOfProductQuality': 3,
-'sftOfProductConsistent': 3,'sftOfPrepurchaseExpectation': 3,'score': 0,'sftLevel': u'','compilation': 0,'willOfRepurchasecategory': 3,'willOfRepurchaseBand': 3,
+'sftOfProductConsistent': 3,'sftOfPrepurchaseExpectation': 3,'score': 0,'sftLevel': u'','compilation': u'','willOfRepurchasecategory': 3,'willOfRepurchaseBand': 3,
 'recommended': 3,
 
 #extern
