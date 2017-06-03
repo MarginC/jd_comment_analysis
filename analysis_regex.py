@@ -8,7 +8,6 @@ import json
 import time
 import sys
 from optparse import OptionParser
-from utils import emotion3 as emotion
 from utils import price
 
 from comment import comment
@@ -22,10 +21,10 @@ def init_parser():
 		default='utf-8', help='set the encoding of input filename', metavar='FILE')
 	parser.add_option('--output', action='store', dest='output',
 		default='./output/result.csv', help='set the output filename', metavar='FILE')
+	parser.add_option('--output-mode', action='store', dest='output_mode',
+		default='result', help='set the output mode')
 	parser.add_option('--unmatch', action='store', dest='unmatch',
 		default='./output/unmatch.txt', help='set the unmatch filename', metavar='FILE')
-	parser.add_option('--emotion', action='store', dest='emotion',
-		default='./output/emotion.txt', help='set the emotion filename', metavar='FILE')
 	parser.add_option('--count', action='store', dest='max_count',
 		default=sys.maxsize, help='set the max count to process')
 	parser.add_option('--log', action='store', dest='logfile',
@@ -51,41 +50,57 @@ def main():
 	unmatch_file = codecs.open(options.unmatch, 'w', encoding='utf-8')
 	log_file = codecs.open(options.logfile, 'w', encoding='utf-8')
 	statistics_file = codecs.open(options.statistics, 'w', encoding='utf-8')
-	emotion_file = codecs.open(options.emotion, 'w', encoding='utf-8')
 
-	output_file.write((','.join(comment.OUT_HEADERS) + '\n'))
+	if options.output_mode == 'result':
+		output_file.write((','.join(comment.OUT_HEADERS) + '\n'))
 
 	c = comment.Comment()
 	for line in input_file.readlines():
 		try:
 			_json = json.loads(line)
-			id = _json['id']
+			# get id
+			if 'id' in _json:
+				id = _json['id']
+			elif 'commentId' in _json:
+				id = _json['commentId']
+			else:
+				raise IndexError
+			# deduplication
 			if id in deduplication:
 				continue
-			deduplication[id] = True
-			if len(_json['content']) < 10:
+			else:
+				deduplication[id] = True
+			# skip len less than 15
+			if len(_json['content']) < 15:
 				continue
+			# init comment object
 			c.clean_and_fill(_json)
+			# match regexes
 			fields = c.match(_json['content'], comment.matchRegex)
 		except:
 			log_file.write(line)
 			continue
 		_match_count = len(fields)
 
-		if _match_count >= 15:
-			try:
-				emotion_ret = emotion.nlpirEmotionPost(_json['content'])
-				emotion_file.write(_json['content'] + '\n')
-				emotion_file.write(json.dumps(emotion_ret, indent=2, sort_keys=True))
-				emotion_file.write('\n')
-			except:
-				pass
+		# log
+		if divmod(count, 1000)[1] == 0:
+			print('process {0} comments, {1}'.format(count, time.process_time()))
 
-		if _match_count > 0:
-			c.data['price'] = prices[_json['referenceId']]
-			output_file.write(str(c) + '\n')
-		else:
+		if _match_count > 5:
+			# set price
+			try:
+				c.data['price'] = price.get_price(_json['referenceId'], prices)
+			except:
+				continue
+			# output
+			if options.output_mode == 'relay':
+				output_file.write(json.dumps({id: c.data, 'match': _match_count}, ensure_ascii=False) + '\n')
+			elif options.output_mode == 'result':
+				output_file.write(str(c) + '\n')
+		elif _match_count == 0:
+			# unmatch output
 			unmatch_file.write(_json['content'] + '\n')
+		# summary and statistic
 		try:
 			summary[_match_count] += 1
 		except:
