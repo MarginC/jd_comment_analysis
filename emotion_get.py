@@ -10,8 +10,6 @@ import sys
 from optparse import OptionParser
 from utils import emotion3 as emotion
 
-from comment import comment
-
 
 def init_parser():
 	parser = OptionParser()
@@ -44,7 +42,12 @@ def main():
 	for line in input_file.readlines():
 		try:
 			_json = json.loads(line)
-			id = _json['id']
+			if 'id' in _json:
+				id = _json['id']
+			elif 'commentId' in _json:
+				id = _json['commentId']
+			else:
+				raise IndexError
 			comment = _json['content']
 		except:
 			failed_file.write(line)
@@ -57,7 +60,7 @@ def main():
 			continue
 
 		if divmod(count, 100)[1] == 0:
-			print('proces {0} comments'.format(count))
+			print('process {0} comments, {1}'.format(count, time.process_time()))
 		try:
 			emotion_ret = emotion.nlpirEmotionPost(comment)
 		except:
@@ -65,7 +68,7 @@ def main():
 			continue
 
 		ret = {id: emotion_ret}
-		emotion_file.write(json.dumps(ret, ensure_ascii=True) + '\n')
+		emotion_file.write(json.dumps(ret, ensure_ascii=True, sort_keys=True) + '\n')
 
 		count += 1
 		if count == int(options.max_count):
