@@ -25,7 +25,7 @@ def init_parser():
 	parser.add_option('--count', action='store', dest='max_count',
 		default=sys.maxsize, help='set the max count to process')
 	parser.add_option('--threshold', action='store', dest='match_threshold',
-		default=5, help='set the match threshold')
+		default=8, help='set the match threshold')
 	return parser.parse_args()
 
 
@@ -56,14 +56,13 @@ def main():
 						except:
 							break
 					output_file.write(str(c) + '\n')
+					count += 1
+					if count == int(options.max_count):
+						break
 
 		# log
 		if divmod(count, 1000)[1] == 0:
 			print('process {0} comments, {1}'.format(count, time.process_time()))
-
-		count += 1
-		if count == int(options.max_count):
-			break
 	strs = 'field match count {0}, process {1}s'.format(count, time.process_time())
 	print(strs)
 
