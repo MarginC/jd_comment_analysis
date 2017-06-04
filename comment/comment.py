@@ -184,6 +184,10 @@ class Comment(object):
 		except:
 			pass
 
+	def load(self, data):
+		self.data = copy.deepcopy(data)
+		pass
+
 	def matchRule(self, field, rules, keywords):
 		for rule in rules:
 			if set(rule[1:]).issubset(keywords):

@@ -28,7 +28,7 @@ def emotionCompute(emotion):
 
 def emotionLoad(filename):
 	emotions = {}
-	with codecs.open(filename, 'r') as f:
+	with codecs.open(filename, 'r', encoding='utf-8') as f:
 		for line in f.readlines():
 			_json = json.loads(line)
 			for id in _json:
