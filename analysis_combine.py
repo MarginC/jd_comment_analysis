@@ -8,7 +8,6 @@ import json
 import time
 import sys
 from optparse import OptionParser
-from utils import price
 from utils import emotion3 as emotion
 
 from comment import comment
@@ -31,6 +30,7 @@ def init_parser():
 
 def main():
 	(options, args) = init_parser()
+	statistic = {}
 	count = 0
 
 	emotions = emotion.emotionLoad(options.emotion)
@@ -56,6 +56,10 @@ def main():
 						except:
 							break
 					output_file.write(str(c) + '\n')
+					try:
+						statistic[c.data['score']] += 1
+					except:
+						statistic[c.data['score']] = 1
 					count += 1
 					if count == int(options.max_count):
 						break
@@ -63,7 +67,8 @@ def main():
 		# log
 		if divmod(count, 1000)[1] == 0:
 			print('process {0} comments, {1}'.format(count, time.process_time()))
-	strs = 'field match count {0}, process {1}s'.format(count, time.process_time())
+	strs = 'statistic {0}, \ncount {1}, process {2}s'.format(
+		json.dumps(statistic, sort_keys=True), count, time.process_time())
 	print(strs)
 
 
